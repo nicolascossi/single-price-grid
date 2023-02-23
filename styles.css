@@ -1,0 +1,135 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --yellow: hsl(71, 73%, 54%);
+    --lightgray: hsl(204, 43%, 93%);
+    --grayishblue: hsl(218, 22%, 67%);
+
+}
+
+body {
+    background-color: var(--lightgray);
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: 'Karla', sans-serif;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+    
+}
+
+
+
+.parent {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "div1 div1 ."
+    "div2 div3 ."
+    ". . .";
+    grid-area: parent;
+
+    
+    
+}
+
+.div1 { 
+    grid-area: div1; 
+    background-color: white;
+    height: 250px;
+    width: 800px;
+    border-radius: 10px 10px 0px 0px;
+    
+    
+}
+
+.div2 { grid-area: div2; 
+background-color: var(--cyan);
+border-radius: 0px 0px 0px 10px;
+
+}
+
+.div3 { grid-area: div3; 
+background-color: var(--grayishblue);
+border-radius: 0px 0px 10px 0px;
+
+}
+
+h2 {
+    
+    
+    color: var(--cyan);
+}
+
+.div1 p {
+    color: var(--grayishblue);
+}
+
+h3 {
+    color: var(--yellow);
+}
+
+.div2 h2 {
+    color: white;
+}
+
+.div2 h4 {
+    color: white;
+}
+
+.div2 p {
+    color: white;
+}
+
+button {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 80%;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.div2 span {
+    color: var(--lightgray);
+    font-size: 32px;
+}
+
+.div3 h2 {
+    color: white;
+
+}
+
+.div3 p {
+    color: var(--lightgray);
+}
+
+.text1 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.text2 {
+    margin-left: 60px;
+    margin-top: 30px;
+
+}
+
+.text3 {
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-right: 60px;
+}
